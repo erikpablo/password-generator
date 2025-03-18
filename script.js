@@ -20,6 +20,11 @@ function passwordGenerator() {
     if(number) lettersPassword += '0123456789'
     if(specials) lettersPassword += '!@#$%^&*()_+{}[]<>?/|'
 
+    if(lettersPassword == '') {
+        alert('Você deve selecionar pelo menos um tipo de caractere!')
+        return
+    }
+
     let password = ''
     for(let i = 0; i < size; i++) {
         let randomNumber = Math.floor(Math.random() * lettersPassword.length)
@@ -30,11 +35,5 @@ function passwordGenerator() {
     passwordInput.value = password
 } 
 
-passwordGenerator()
-
-
-newPassword.addEventListener('click', () => {
-    passwordInput.value = ''
-    passwordGenerator()
-})
+newPassword.addEventListener('click', passwordGenerator)
 
