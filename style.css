@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.password {
+    display: grid;
+    place-items: center;
+}
+
+.password label {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.password input {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.newPassword {
+    margin-top: 20px;
+}
+
+.newPassword button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+
+    color: #fff;
+    background-color: #000000;
+    box-shadow: 2px 2px 2px 1px rgba(104, 103, 103, 0.2);
+    cursor: pointer;
+}
+
+.newPassword button:hover {
+    background-color: #202020;
+    transform: translateY(-2px);
+}
+
+.newPassword button:active {
+    transform: translateY(2px);
+}
